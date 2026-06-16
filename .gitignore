@@ -1,0 +1,13 @@
+# IDE
+.idea/
+
+# dependencies
+node_modules/
+
+# builds
+dist/
+build/
+storybook-static/
+
+# env files
+.env
