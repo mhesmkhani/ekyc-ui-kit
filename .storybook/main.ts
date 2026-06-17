@@ -12,8 +12,6 @@ const config: StorybookConfig = {
   },
   staticDirs: ['../public'],
   typescript: {
-    // Avoid Storybook index failures caused by react-docgen parsing complex/polymorphic TS components.
-    // This keeps stories, docs pages, controls, fonts, logo, and palette working.
     reactDocgen: false,
   },
   viteFinal: async (config) => {
@@ -21,8 +19,6 @@ const config: StorybookConfig = {
       ...config.server,
       host: '0.0.0.0',
       strictPort: true,
-      // Useful when opening Storybook from another device through a LAN IP.
-      // If your Vite version ignores this, it is harmless.
       allowedHosts: true,
     };
 

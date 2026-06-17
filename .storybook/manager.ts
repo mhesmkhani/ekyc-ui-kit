@@ -4,7 +4,7 @@ import { create } from '@storybook/theming/create';
 addons.setConfig({
   theme: create({
     base: 'dark',
-    brandTitle: 'EKYC UI Kit',
+    brandTitle: 'Sanay Development UI Kit - eKYC Design System',
     brandTarget: '_self',
   }),
 });
